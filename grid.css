@@ -1,0 +1,256 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header-div{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    gap: 10px;
+}
+
+
+img{
+    width: 50px;
+    height: 50px;
+    background-size:100%;
+    cursor: pointer;
+}
+.search {
+    width: 200px;
+    display: flex;
+    height: 40px;
+}
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #00B4CC;
+}
+.searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+}
+.card{
+    flex-flow: column;
+    /*width: 250px;*/
+    /*height: 350px;*/
+    background: white;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    /*box-shadow:;*/
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.card:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+}
+
+.img{
+    width: 60%;
+    height: 60%;
+    cursor: auto;
+}
+.img:hover{
+    transform: translateY(5px);
+    color:#00394B;
+}
+.price{
+    font-size: 18px;
+    height: 20px;
+    top:40%;
+    left: 50%;
+}
+.small_price{
+    font-size: 10px;
+    height: 5px;
+    top:40%;
+    left: 50%;
+    padding: 11px;
+}
+
+.add{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    /*float:right;*/
+    background: #f1f1f1;
+    /*transition: background 0.5s;*/
+    border-left:solid thin rgba(0,0,0,0.1);
+}
+
+
+
+.img:hover{
+    transform: translateY(5px);
+    color:#00394B;
+}
+
+#heart{
+    display: block;
+    top: 7px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: fixed;
+}
+
+
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #180202;
+    animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+.sec{
+    padding: 43vh 46vw ;
+}
+
+.backDiv{
+    width: 100vw;
+    height: 100vh;
+}
+
+.newPage{
+    background-color: rgba(255,255,255,0.3);
+    font-family: sans-serif;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: 720px;
+    width: 1000px;
+    box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    flex-direction: row;
+}
+
+.added_card{
+    width: 100px;
+    height: 232.8px;
+
+
+    flex-flow: column;
+    /*width: 250px;*/
+    /*height: 350px;*/
+    background: white;
+
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    /*box-shadow:;*/
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+    font-size: 7px;
+    text-align: center;
+}
+.count{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 23px;
+    height: 23px;
+    border-radius: 100px;
+    background-color: whitesmoke;
+    border: solid black;
+    color: #100909;
+    font-size: 15px;
+}
